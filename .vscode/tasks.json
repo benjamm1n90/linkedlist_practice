@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++", // Use g++ for compiling
+            "args": [
+                "-g",
+                "-o", "C:/Users/benja/Desktop/linkedlist_practice/a.exe", // Output path for the compiled program
+                "C:/Users/benja/Desktop/linkedlist_practice/main.cpp",   // Path to main.cpp
+                "C:/Users/benja/Desktop/linkedlist_practice/linkedlist.cpp",  // Path to linkedlist.cpp
+                "C:/Users/benja/Desktop/linkedlist_practice/node.cpp" // Path to node.cpp
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task for C++ build"
+        }
+    ]
+}

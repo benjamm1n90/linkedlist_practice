@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug C++ Program",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:/Users/benja/Desktop/linkedlist_practice/a.exe", // Full path to the executable
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "C:/Users/benja/Desktop/linkedlist_practice", // Set current working directory to project folder
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb", // Use gdb for Windows (with MinGW)
+            "miDebuggerPath": "C:/ProgramData/mingw64/mingw64/bin/gdb.exe", // Path to gdb.exe (adjust based on where MinGW is installed)
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build", // A task to build the project before debugging
+            "miDebuggerArgs": "",
+            "serverLaunchTimeout": 10000,
+            "filterStderr": true,
+            "filterStdout": true,
+            "launchCompleteCommand": "exec-run",
+            "showDisplayString": true
+        }
+    ]
+}
